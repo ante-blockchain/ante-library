@@ -13,26 +13,26 @@ This library provides functions to:
 ## Installation
 
 ```bash
-npm install --save solana-json-storage
+npm install --save ante-library
 ```
 
 ## Usage
 
 ```typescript
-import { SolanaJsonStorage } from 'solana-json-storage';
+import { AnteLibrary } from 'ante-library';
 
-const solanaJsonStorage = new SolanaJsonStorage();
+const anteLibrary = new AnteLibrary();
 
 // Store JSON data
 const jsonData = { key: 'value' };
 const storageType = 's3'; // or 'google' or 'azure'
-const { transactionId, filePath } = await solanaJsonStorage.storeJsonData(jsonData, storageType);
+const { transactionId, filePath } = await anteLibrary.storeJsonData(jsonData, storageType);
 
 // Verify hash
-const isHashValid = await solanaJsonStorage.verifyHash(transactionId, filePath);
+const isHashValid = await anteLibrary.verifyHash(transactionId, filePath);
 
 // Retrieve file
-const fileContents = await solanaJsonStorage.retrieveFile(filePath, storageType);
+const fileContents = await anteLibrary.retrieveFile(filePath, storageType);
 ```
 
 ## Environment Variables
