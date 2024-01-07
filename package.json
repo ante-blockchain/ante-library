@@ -1,6 +1,7 @@
 {
   "name": "ante-library",
   "version": "1.0.0",
+  "author": "ante-blockchain",
   "description": "A Node.js / TypeScript library for storing JSON data blobs on Solana blockchain and remote file storage services.",
   "main": "src/index.ts",
   "scripts": {
@@ -10,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/solana-json-storage.git"
+    "url": "git+https://github.com/ante-blockchain/ante-library.git"
   },
   "keywords": [
     "solana",
@@ -22,7 +23,6 @@
     "google",
     "azure"
   ],
-  "author": "Your Name <your.email@example.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yourusername/solana-json-storage/issues"
